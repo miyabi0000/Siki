@@ -62,6 +62,7 @@ app.get('*', (req: Request, res: Response) => {
   res.sendFile(path.join(__dirname, '..', '..', 'frontend', 'build', 'index.html'));
 });
 
+
 // 404 エラーのハンドリング
 app.use(function (req: Request, res: Response, next: NextFunction) {
   next(createError(404));
